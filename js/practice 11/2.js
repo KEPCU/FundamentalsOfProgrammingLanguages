@@ -20,13 +20,17 @@ let tasks = [
 ];
 
 function Iterative(data) {
+    console.log("-- Iterative");
+
     for(var i = 0; i < data.length; i++) if(data[i].priority == 1) console.log(data[i].name);
 }
 
 Iterative(tasks);
 
-function Funtional(data) {
+function Functional(data) {
+    console.log("-- Functional");
+
     data.filter(x => x.priority == 1).map(x => console.log(x.name));
 }
 
-Funtional(tasks);
+Functional(tasks);

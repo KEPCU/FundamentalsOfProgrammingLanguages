@@ -25,9 +25,9 @@ function Iterative(data) {
 
 Iterative(tasks);
 
-function Funtional(data) {
-    console.log("-- Funcional");
+function Functional(data) {
+    console.log("-- Functional");
     data.map(x => console.log(x.name));
 }
 
-Funtional(tasks);
+Functional(tasks);
