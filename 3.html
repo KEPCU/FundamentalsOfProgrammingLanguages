@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestre el m ́aximo precio (price) de los veh ́ıculos “Honda”. Utilice programaci ́on funcional (pue-
+        de usar map, filter o reduce).</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const vehicles = [
+    { make: "Honda", model: 'CR-V', type: 'suv', price: 24045 },
+    { make: "Honda", model: 'Accord', type: 'sedan', price: 22455 },
+    { make: "Mazda", model: 'Mazda 6', type: 'sedan', price: 24195 },
+    { make: "Mazda", model: 'CX-9', type: 'suv', price: 31520 },
+    { make: "Toyota", model: '4Runner', type: 'suv', price: 34210 },
+    { make: "Toyota", model: 'Sequoia', type: 'suv', price: 45560 },
+    { make: "Toyota", model: 'Tacoma', type: 'truck', price: 24320 },
+    { make: "Ford", model: 'F-150', type: 'truck', price: 27110 },
+    { make: "Ford", model: 'Fusion', type: 'sedan', price: 22120 },
+    { make: 'Ford', model: 'Explorer', type: 'suv', price: 31660 }
+];
+
+    console.log("price ", Math.max(vehicles.filter(x => x.make == "Honda")));
+    document.write("price ", vehicles.filter(x => x.make == "Honda").reduce(( prev , item , i, array ) => prev + item.price , 0));
+</script>
+</html>
