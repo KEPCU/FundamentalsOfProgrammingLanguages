@@ -30,13 +30,18 @@
         ];
 
         function Iterative(data) {
-            console.log("-- Iterative");
-            document.write("-- Functional", "<br>");
-
             let totalTime = 0;
             for(var i = 0; i < data.length; i++) if(data[i].priority == 1) totalTime += data[i].duration; 
+            console.log("-- Iterative");
+            document.write("-- Iterative", "<br>");
+
+            console.log("with previus filter: ", totalTime);
+            document.write("with previus filter: ", totalTime, "<br>");
+
+            totalTime = 0;
+            for(var i = 0; i < data.length; i++) totalTime += data[i].duration; 
             console.log("total time: ", totalTime);
-            document.write("total time: ", totalTime,"<br>");
+            document.write("total time: ", totalTime, "<br>");
         }
 
         Iterative(tasks);
@@ -45,8 +50,11 @@
             console.log("-- Functional");
             document.write("-- Functional", "<br>");
 
-            console.log("total time ", data.filter(x => x.priority == 1).reduce(( sum , item , i, array ) => sum + item.duration , 0));
-            document.write("total time ", data.filter(x => x.priority == 1).reduce(( sum , item , i, array ) => sum + item.duration , 0),"<br>");
+            console.log("with previus filter: ", data.filter(x => x.priority == 1).reduce(( sum , item , i, array ) => sum + item.duration , 0));
+            document.write("with previus filter: ", data.filter(x => x.priority == 1).reduce(( sum , item , i, array ) => sum + item.duration , 0), "<br>");
+
+            console.log("total time: ", data.reduce(( sum , item , i, array ) => sum + item.duration , 0));
+            document.write("total time: ", data.reduce(( sum , item , i, array ) => sum + item.duration , 0), "<br>");
         }
 
         Functional(tasks);

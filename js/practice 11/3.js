@@ -23,6 +23,10 @@ function Iterative(data) {
     let totalTime = 0;
     for(var i = 0; i < data.length; i++) if(data[i].priority == 1) totalTime += data[i].duration; 
     console.log("-- Iterative");
+    console.log("with previus filter: ", totalTime);
+
+    totalTime = 0;
+    for(var i = 0; i < data.length; i++) totalTime += data[i].duration; 
     console.log("total time: ", totalTime);
 }
 
@@ -30,7 +34,8 @@ Iterative(tasks);
 
 function Functional(data) {
     console.log("-- Functional");
-    console.log("total time ", data.filter(x => x.priority == 1).reduce(( sum , item , i, array ) => sum + item.duration , 0));
+    console.log("with previus filter: ", data.filter(x => x.priority == 1).reduce(( sum , item , i, array ) => sum + item.duration , 0));
+    console.log("total time: ", data.reduce(( sum , item , i, array ) => sum + item.duration , 0));
 }
 
 Functional(tasks);
