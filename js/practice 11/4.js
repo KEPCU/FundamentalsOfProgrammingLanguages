@@ -21,9 +21,9 @@ function Iterative(data) {
 
 Iterative(vehicles);
 
-function Funtional(data) {
-    console.log("-- Funcional");
+function Functional(data) {
+    console.log("-- Functional");
     data.filter(x => x.type == 'suv').map(x => console.log(x.price));
 }
 
-Funtional(vehicles);
+Functional(vehicles);

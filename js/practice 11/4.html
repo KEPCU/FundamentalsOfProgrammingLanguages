@@ -34,14 +34,15 @@
 
         Iterative(vehicles);
 
-        function Funtional(data) {
+        function Functional(data) {
             console.log("-- Functional");
-            document.write("-- Functional");
+            document.write("-- Functional", "<br>");
 
             data.filter(x => x.type == 'suv').map(x => console.log(x.price));
+            data.filter(x => x.type == 'suv').map(x => document.write(x.price,"<br>"));
         }
 
-        Funtional(vehicles);
+        Functional(vehicles);
     </script>
 </body>
 </html>

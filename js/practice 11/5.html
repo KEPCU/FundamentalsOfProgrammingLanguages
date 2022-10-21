@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Muestre el score total (pilotingScore + shootingScore) de los usuarios Force (isForceUser: true).
+        // Implemente una versi ́on iterativa y una funcional (puede usar map, filter o reduce).
+
+        var personnel = [
+            {
+                id: 5 ,
+                name : "Luke Skywalker",
+                pilotingScore : 98 ,
+                shootingScore : 56 ,
+                isForceUser : true ,
+            },
+            {
+                id: 82 ,
+                name : "Sabine Wren",
+                pilotingScore : 73 ,
+                shootingScore : 99 ,
+                isForceUser : false ,
+            },
+            {
+                id: 22 ,
+                name : "Zeb Orellios",
+                pilotingScore : 20 ,
+                shootingScore : 59 ,
+                isForceUser : false ,
+            },
+            {
+                id: 15 ,
+                name : "Ezra Bridger",
+                pilotingScore : 43 ,
+                shootingScore : 67 ,
+                isForceUser : true ,
+            },
+            {
+                id: 11 ,
+                name : "Caleb Dume",
+                pilotingScore : 71 ,
+                shootingScore : 85 ,
+                isForceUser : true ,
+            }
+        ];
+
+        function Iterative(data) {
+            console.log("-- Iterative");
+            document.write("-- Iterative", "<br>");
+
+            for(var i = 0; i < data.length; i++) if(data[i].isForceUser) console.log(data[i].pilotingScore + data[i].shootingScore);
+            for(var i = 0; i < data.length; i++) if(data[i].isForceUser) document.write(data[i].pilotingScore + data[i].shootingScore, "<br>");
+
+            let totalPrice = 0;
+            for(var i = 0; i < data.length; i++) if(data[i].isForceUser) totalPrice += data[i].pilotingScore + data[i].shootingScore;
+            console.log("total: ", totalPrice);
+            document.write("total: ", totalPrice, "<br>");
+        }
+
+        Iterative(personnel);
+
+        function Functional(data) {
+            console.log("-- Functional");
+            document.write("-- Functional", "<br>");
+
+            data.filter(x => x.isForceUser).map(x => console.log(x.pilotingScore + x.shootingScore));
+            data.filter(x => x.isForceUser).map(x => document.write(x.pilotingScore + x.shootingScore, "<br>"));
+
+            console.log("total: ", data.filter(x => x.isForceUser).reduce(( sum , item , i, array ) => sum + item.pilotingScore + item.shootingScore , 0));
+            document.write("total: ", data.filter(x => x.isForceUser).reduce(( sum , item , i, array ) => sum + item.pilotingScore + item.shootingScore , 0), "<br>");
+        }
+
+        Functional(personnel);
+    </script>
+</body>
+</html>
