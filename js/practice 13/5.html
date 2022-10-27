@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Implemente una funci ́on delayInvoc que en cada invocaci ́on incremente la variable total con el
+        // valor enviado como parametro.
+
+        var total = 0;
+
+        var delayInvoc = function (a) {
+            total += a;
+            return function (b) {        
+                if(b) return delayInvoc(b);
+            };
+        };
+
+        delayInvoc(4)(5);
+        console.log("4,5: ",total); //9
+        document.write("4,5: ",total,"<br>"); //9
+
+        delayInvoc(4)(5)(8);
+        console.log("4,5,8: ",total); // 26
+        document.write("4,5,8: ",total,"<br>"); //9
+
+        delayInvoc(1)(1)(1)(1);
+        console.log("1,1,1,1: ",total); // 30
+        document.write("1,1,1,1: ",total,"<br>"); //9
+    </script>
+    
+</body>
+</html>

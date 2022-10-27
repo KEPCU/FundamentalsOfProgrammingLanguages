@@ -8,4 +8,4 @@ const users = [
     { id: 100 , name : 'Vicente', age : 30 , group : 'admin' }
 ];
 
-users.filter(x => x.name.includes("i")).map(x => console.log(x.id, x.name, x.age, x.group));
+users.filter(x => x.name.includes("i")).map(x => console.log(x));

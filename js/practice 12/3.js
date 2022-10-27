@@ -9,7 +9,7 @@ const users = [
     { id: 100 , name : 'Vicente', age : 30 , group : 'admin' }
 ];
 
-users.map(x => console.log(x.group == 'admin' ? "TRUE" : "FALSE" ,x.id, x.name, x.age, x.group));
+users.map(x => console.log(x.group == 'admin' ? "TRUE" : "FALSE" ,x));
 
 console.log("-- Filter 'i'")
-users.filter(x => x.name.includes("i")).map(x => console.log(x.group == 'admin' ? "TRUE" : "FALSE" ,x.id, x.name, x.age, x.group));
+users.filter(x => x.name.includes("i")).map(x => console.log(x.group == 'admin' ? "TRUE" : "FALSE" ,x));
