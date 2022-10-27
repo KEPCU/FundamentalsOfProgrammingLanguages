@@ -2,6 +2,32 @@
 \usepackage{graphicx}
 \usepackage[left=0.8in, top=0.7in, total={6.2in,8in}]{geometry}
 \usepackage[normalem]{ulem}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1,1,1}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
 \renewcommand\ULthickness{1.0pt}   %%---> For changing thickness of underline
 \setlength\ULdepth{1.3ex}%\maxdimen ---> For changing depth of underline
 
@@ -42,24 +68,7 @@
 	\end{parts}
 \vspace{0.2in}
 
-\begin{verbatim}
-	const Arithmetics = {
-		add: (a, b) => {
-			return `${a} + ${b} = ${a + b}`;
-		},
-		subtract: (a, b) => {
-			return `${a} - ${b} = ${a - b}`
-		},
-		multiply: (a, b) => {
-			return `${a} * ${b} = ${a * b}`
-		},
-		division: (a, b) => {
-			if (b != 0) return `${a} / ${b} = ${a / b}`;
-			return `Cannot Divide by Zero!!!`;
-		}
-	}
-\end{verbatim}
-
+\lstinputlisting[language=Octave]{1.js}
 
 %q2
 \pointsdroppedatright
@@ -71,39 +80,12 @@
 	\end{parts}
 \vspace{0.2in}
 
-\begin{verbatim}
-	function partial(firstArgument, secondArgument) {
-		return function(thirdArgument, fourthArgument, fifthArgument) {
-			return firstArgument + secondArgument + thirdArgument + fourthArgument + fifthArgument;
-		}
-	}
-
-	function curry(firstArgument) {
-		return function(secondArgument) {
-			return function(thirdArgument) {
-				return function(fourthArgument ) {
-					return function(fifthArgument) {
-						return firstArgument + secondArgument + thirdArgument + fourthArgument + fifthArgument;
-					}
-				}
-			}
-		}
-	}
-\end{verbatim}
+\lstinputlisting[language=Octave]{2.js}
 
 %q3
 \pointsdroppedatright
 	\question Implemente una función que calcule el volumen de un cilindro. Incluya la versión normal y una aplicando Currying. (2 puntos)
-	\begin{verbatim}
-		var NormalCylinderVolume = (r, h) => Math.PI * Math.pow(r,2) * h;
-
-		console.log("Normal: ",NormalCylinderVolume(2, 3));
-
-		var CurryingCylinderVolume =(r) => {
-			return (h) => Math.PI * Math.pow(r,2) * h;
-		}
-		console.log("Currying: ",CurryingCylinderVolume(2)(3));
-	\end{verbatim}
+	\lstinputlisting[language=Octave]{3.js}
 
 	\begin{figure}[h]
 		\includegraphics[width=8cm]{3.png}
@@ -113,17 +95,7 @@
 %q4
 \pointsdroppedatright
 	\question Cree una función joinWords que una varios parametros de tipo string. (3 puntos)
-	\begin{verbatim}
-		function joinWords(string1) {
-			return (string2) => !string2 ? string1 : joinWords(`${string1} ${string2}`);
-		}
-
-		result = joinWords('Hello')();
-		console.log(result); // Hello
-
-		result = joinWords('There')('is')('no')('spoon.')();
-		console.log(result); // There is no spoon.
-	\end{verbatim}
+	\lstinputlisting[language=Octave]{4.js}
 
 	\begin{figure}[h]
 		\includegraphics[width=8cm]{4.png}
@@ -133,26 +105,7 @@
 %q5
 \pointsdroppedatright
 	\question Implemente una función delayInvoc que en cada invocación incremente la variable total con el valor enviado como parametro. (3 puntos)
-	\begin{verbatim}
-		fvar total = 0;
-
-		var delayInvoc = function (a) {
-			total += a;
-			return function (b) {        
-				if(b) return delayInvoc(b);
-			};
-		};
-		
-		
-		delayInvoc(4)(5);
-		console.log("4,5: ",total); //9
-		
-		delayInvoc(4)(5)(8);
-		console.log("4,5,8: ",total); // 26
-		
-		delayInvoc(1)(1)(1)(1);
-		console.log("1,1,1,1: ",total); // 30
-	\end{verbatim}
+	\lstinputlisting[language=Octave]{5.js}
 
 	\begin{figure}[h]
 		\includegraphics[width=8cm]{5.png}
@@ -162,27 +115,7 @@
 %q6
 \pointsdroppedatright
 	\question Implemente una función curry que tome como argumento cualquier función f y retorne la versión curried de f. (4 puntos)
-	\begin{verbatim}
-		function abc(a, b, c) {
-			return a+b+c;
-		}
-		
-		function curry(f) {
-			return function curry2(...args) {
-				if (args.length >= f.length) return f.apply(this, args);
-				else return function curry3(...args2) {
-					return curry2.apply(this, args.concat(args2));
-				}
-			};
-		}
-		  
-		var curriedAbc = curry(abc);
-		
-		console.log("(2)(3)(4): ", curriedAbc(2)(3)(4)); // 9
-		console.log("(2, 3)(4): ", curriedAbc(2, 3)(4)); // 9
-		console.log("(2)(3, 4): ", curriedAbc(2)(3, 4)); // 9
-		console.log("(2, 3, 4): ", curriedAbc(2, 3, 4)) ; // 9
-	\end{verbatim}
+	\lstinputlisting[language=Octave]{6.js}
 
 	\begin{figure}[h]
 		\includegraphics[width=8cm]{6.png}
