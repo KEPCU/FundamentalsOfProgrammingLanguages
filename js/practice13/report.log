@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  26 OCT 2022 23:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  26 OCT 2022 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -305,18 +305,8 @@ File: 6.png Graphic file (type png)
 Package pdftex.def Info: 6.png  used on input line 188.
 (pdftex.def)             Requested size: 227.62204pt x 166.55586pt.
  [4 <./5.png>]
-e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice13/report.tex:193: Undefined control sequence.
-l.193 \url
-           {https://github.com/KEPCU/FundamentalsOfProgrammingLanguages/tree...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (227.9385pt too wide) in paragraph at lines 192--194
-[]\OT1/cmr/m/n/14.4 GitHub: https://github.com/KEPCU/FundamentalsOfProgrammingLanguages/tree/master/js/practice13 
+Overfull \hbox (94.28983pt too wide) in paragraph at lines 192--194
+[]\OT1/cmr/m/n/14.4 GitHub: \OT1/cmr/m/n/10.95 https://github.com/KEPCU/FundamentalsOfProgrammingLanguages/tree/master/js/practice13 
  []
 
 [5 <./6.png>]
@@ -355,7 +345,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  60i,10n,67p,336b,447s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (5 pages, 364693 bytes).
+Output written on report.pdf (5 pages, 365071 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
