@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  26 OCT 2022 23:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  26 OCT 2022 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice 13/report.tex"
-(e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice 13/report.tex
+**"e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice13/report.tex"
+(e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice13/report.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28> (E:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/exam\exam.cls
 Document Class: exam 2021/02/26 Version 2.7 by Philip Hirschhorn
@@ -305,14 +305,19 @@ File: 6.png Graphic file (type png)
 Package pdftex.def Info: 6.png  used on input line 188.
 (pdftex.def)             Requested size: 227.62204pt x 166.55586pt.
  [4 <./5.png>]
-e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice 13/report.tex:193: Undefined control sequence.
+e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice13/report.tex:193: Undefined control sequence.
 l.193 \url
-           {https://github.com/KEPCU/Report01FdLdP}
+           {https://github.com/KEPCU/FundamentalsOfProgrammingLanguages/tree...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (227.9385pt too wide) in paragraph at lines 192--194
+[]\OT1/cmr/m/n/14.4 GitHub: https://github.com/KEPCU/FundamentalsOfProgrammingLanguages/tree/master/js/practice13 
+ []
 
 [5 <./6.png>]
 This exam contains 6 questions with 3 parts, 0 subparts, and 0 subsubparts.
@@ -320,7 +325,7 @@ This exam contains 6 questions with 3 parts, 0 subparts, and 0 subsubparts.
 Class exam Warning: Point totals have changed. Rerun to get point totals right.
 
 
-e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice 13/report.tex:194: LaTeX Error: \begin{questions} on input line 37 ended by \end{document}.
+e:/universidad/SEMESTRE_5/Fundamentals of Programming Languages/practices/js/practice13/report.tex:194: LaTeX Error: \begin{questions} on input line 37 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -343,14 +348,14 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### bottom level 
 Here is how much of TeX's memory you used:
  3662 strings out of 475385
- 60681 string characters out of 2777378
+ 60674 string characters out of 2777378
  423523 words of memory out of 3000000
  25019 multiletter control sequences out of 15000+600000
  473176 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,10n,67p,337b,447s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 60i,10n,67p,336b,447s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (5 pages, 364984 bytes).
+Output written on report.pdf (5 pages, 364693 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
