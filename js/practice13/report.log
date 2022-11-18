@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  27 OCT 2022 07:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.25)  28 OCT 2022 08:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,68 +289,7 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 3
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [1
 
-{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo.png>]) (2.js) (3.js
-
-3.js:1: LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 // Implemente una funci ́on 
-                                 que calcule el volumen de un cilindro. Incl...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-3.js:1: LaTeX Error: Invalid UTF-8 byte "81.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 // Implemente una funci ́on 
-                                 que calcule el volumen de un cilindro. Incl...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-3.js:1: LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ...umen de un cilindro. Incluya la versi ́on 
-                                                  normal y una
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-3.js:1: LaTeX Error: Invalid UTF-8 byte "81.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ...umen de un cilindro. Incluya la versi ́on 
-                                                  normal y una
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[2])
+{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo.png>]) (2.js) (3.js [2])
 <3.png, id=17, 180.675pt x 38.39343pt>
 File: 3.png Graphic file (type png)
 <use 3.png>
@@ -393,68 +332,7 @@ File: 4.png Graphic file (type png)
 <use 4.png>
 Package pdftex.def Info: 4.png  used on input line 101.
 (pdftex.def)             Requested size: 227.62204pt x 75.40714pt.
- (5.js
-
-5.js:1: LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 // Implemente una funci ́on 
-                                 delayInvoc que en cada invocaci ́on increm...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-5.js:1: LaTeX Error: Invalid UTF-8 byte "81.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 // Implemente una funci ́on 
-                                 delayInvoc que en cada invocaci ́on increm...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-5.js:1: LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ... ́on delayInvoc que en cada invocaci ́on 
-                                                  incremente la variable tot...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-5.js:1: LaTeX Error: Invalid UTF-8 byte "81.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ... ́on delayInvoc que en cada invocaci ́on 
-                                                  incremente la variable tot...
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-[3 <./3.png> <./4.png>])
+ (5.js [3 <./3.png> <./4.png>])
 <5.png, id=24, 96.36pt x 57.21375pt>
 File: 5.png Graphic file (type png)
 <use 5.png>
@@ -590,15 +468,15 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### semi simple group (level 1) entered at line 63 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6005 strings out of 475385
- 87115 string characters out of 2777378
- 785709 words of memory out of 3000000
- 27345 multiletter control sequences out of 15000+600000
+ 6006 strings out of 475385
+ 87129 string characters out of 2777378
+ 784709 words of memory out of 3000000
+ 27346 multiletter control sequences out of 15000+600000
  473641 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,62p,336b,2458s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1000.pk><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (5 pages, 388161 bytes).
+Output written on report.pdf (5 pages, 388168 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

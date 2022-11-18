@@ -1,4 +1,4 @@
-// Implemente una funci ́on que calcule el volumen de un cilindro. Incluya la versi ́on normal y una
+// Implemente una funcion que calcule el volumen de un cilindro. Incluya la version normal y una
 // aplicando Currying.
 
 var NormalCylinderVolume = (r, h) => Math.PI * Math.pow(r,2) * h;

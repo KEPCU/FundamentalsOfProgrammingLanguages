@@ -1,4 +1,4 @@
-// Implemente una funci ́on delayInvoc que en cada invocaci ́on incremente la variable total con el
+// Implemente una funcion delayInvoc que en cada invocacion incremente la variable total con el
 // valor enviado como parametro.
 
 var total = 0;
