@@ -12,7 +12,7 @@
 ]{CSUniSchoolLabReport}
 
 
-
+\usepackage{hyperref}
 \usepackage[normalem]{ulem}
 \usepackage{listings}
 \usepackage{xcolor}
@@ -205,10 +205,62 @@ Finalmente, los datos obtenidos se exportarán en un CVS.
 %----------------------------------------------------------------------------------------
 
 \section{Resultados}
+%----------------------------------------------------------------------------------------
+\subsection{Tabla Comparativa: Cocktail Sort}
 
-\subsection{Graficador Python}
+\begin{figure}[H] 
+	\centering 
+	\includegraphics[width=1\textwidth]{Figures/1.png} % Include the figure
+\end{figure}
+\begin{center}
+    Tabla 3 : Tiempos de ejecución, promedio y desviación estándar
+\end{center}
+ 
+\begin{figure}[H] 
+	\centering 
+	\includegraphics[width=1\textwidth]{Figures/2.png} % Include the figure
+\end{figure}
+\begin{center}
+    Tabla 4 : Tiempos de ejecución, promedio y desviación estándar
+\end{center}
 
-\subsection{Cocktail Sort}
+\begin{figure}[H] 
+	\centering 
+	\includegraphics[width=1\textwidth]{Figures/3.png} % Include the figure
+\end{figure}
+\begin{center}
+    Tabla 5 : Tiempos de ejecución, promedio y desviación estándar
+\end{center}
+
+%----------------------------------------------------------------------------------------
+\subsection{Tabla Comparativa: Counting Sort}
+
+\begin{figure}[H] 
+	\centering 
+	\includegraphics[width=1\textwidth]{Figures/4.png} % Include the figure
+\end{figure}
+\begin{center}
+    Tabla 4 : Tiempos de ejecución, promedio y desviación estándar
+\end{center}
+
+\begin{figure}[H] 
+	\centering 
+	\includegraphics[width=1\textwidth]{Figures/5.png} % Include the figure
+\end{figure}
+\begin{center}
+    Tabla 5 : Tiempos de ejecución, promedio y desviación estándar
+\end{center}
+
+\begin{figure}[H] 
+	\centering 
+	\includegraphics[width=1\textwidth]{Figures/6.png} % Include the figure
+\end{figure}
+\begin{center}
+    Tabla 6 : Tiempos de ejecución, promedio y desviación estándar
+\end{center}
+
+%----------------------------------------------------------------------------------------
+\subsection{Gráfico Comparativo: Cocktail Sort}
 
 \begin{figure}[H] 
 	\centering 
@@ -222,8 +274,11 @@ Finalmente, los datos obtenidos se exportarán en un CVS.
 	\caption{Cocktail Sort en C++ y Go}
 \end{figure}
 
+Como se ve en la  Figura 1, Python es uno de los peores lenguajes en lo que rendimiento respecta (esto debido a su naturaleza [interpretado]). A pesar de que C++ suele ser el mejor en tiempo de ejecución, esta vez Go es superior. \\\\
+Si sólo se examina la Figura 1, parece que la diferencia no es tan amplia, pero en la Figura 2, se ve que Go tuvo un tiempo de ejecución notablemente mejor, se toma casi la mitad del tiempo que se toma C++.
 
-\subsection{Counting Sort}
+%----------------------------------------------------------------------------------------
+\subsection{ Gráfico Comparativo: Counting Sort}
 
 \begin{figure}[H] 
 	\centering 
@@ -237,36 +292,23 @@ Finalmente, los datos obtenidos se exportarán en un CVS.
 	\caption{Counting Sort en C++ y Go}
 \end{figure}
 
-%----------------------------------------------------------------------------------------
-%	DISCUSSION
-%----------------------------------------------------------------------------------------
-
-\section{Discussion of Experimental Uncertainty}
-
-The accepted value (periodic table) is \SI{24.3}{\gram\per\mole} \autocite{Smith:2022qr}. The percentage discrepancy between the accepted value and the result obtained here is 1.3\%. Because only a single measurement was made, it is not possible to calculate an estimated standard deviation (see \textcite{Smith:2021jd}).
-
-The most obvious source of experimental uncertainty is the limited precision of the balance. Other potential sources of experimental uncertainty are: the reaction might not be complete; if not enough time was allowed for total oxidation, less than complete oxidation of the magnesium might have, in part, reacted with nitrogen in the air (incorrect reaction); the magnesium oxide might have absorbed water from the air, and thus weigh ``too much." Because the result obtained is close to the accepted value it is possible that some of these experimental uncertainties have fortuitously cancelled one another.
+Si se examina la Figura 3, Python sigue mostrando un mal rendimiento, sigue teniendo una grna diferencia con Go y C++. Nuevamente Go se moetró superior a C++. \\\\
+Al examinar la Figura 4, se puede notar que Go ya no fue tan superior a C++, incluso en un punto fue mejor. Esta vez la diferencia sería de un t - C, donde C es casi igual a 0.0005 segundos, aunque este se va incrementando.
 
 %----------------------------------------------------------------------------------------
-%	ANSWERS TO DEFINITIONS
+%	Conclusiones
 %----------------------------------------------------------------------------------------
 
-\section{Answers to Definitions}
+\section{Conclusiones}
 
-\begin{enumerate}
-	\item The \textit{atomic weight of an element} is the relative weight of one of its atoms compared to C-12 with a weight of 12.0000000$\ldots$, hydrogen with a weight of 1.008, to oxygen with a weight of 16.00. Atomic weight is also the average weight of all the atoms of that element as they occur in nature.
-	\item The \textit{units of atomic weight} are two-fold, with an identical numerical value. They are g/mole of atoms (or just g/mol) or amu/atom.
-	\item \textit{Percentage discrepancy} between an accepted (literature) value and an experimental value is:
-		\begin{equation*}
-			\frac{\mathrm{experimental\;result} - \mathrm{accepted\;result}}{\mathrm{accepted\;result}}
-		\end{equation*}
-\end{enumerate}
+Realmente no se podría concluir algo claro con los resultados del experimento, a pesar de que parece que Go es mejor que C++, esto debido a las tablas de los tiempos obtenidos, se puede apreciar que Go y Python en los primeros casos dan como resultado 0, lo cual no puede ser posible incluso en el Counting Sort, C++ no retorna 0 en tiempos de ejecución. 
+Una vez expuesto esto, se podría decir que Go y Python no capturaron el tiempo de ejecución de la mejor forma, podría ser esa la razón por la que C++ se mostró inferior a Go. \\\\
+Una vez aclarado la "victoria" de Go sobre C++, se puede decir que los lenguajes de programación compilados son claramente superiores a los interpretados, o incluso a los que están en un punto intermedio como es el caso de Java. Esta es la principal razón por la que estos se usan para la base de sistemas grandes y con una gran cantidad de opraciones, es la razón de la existencia de TypeScript y Numba que tiene como objetivo mejorar JavaScript y Python respectivamente. Pero esto no quiere decir que los lenguajes interpretados no tengan uso (de hecho son los más utilizados), pero si se ven limitados para casos de exigencia máxima  \\\\\\
+
 
 %----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
 
-\printbibliography % Output the bibliography
+\href{https://github.com/KEPCU/FundamentalsOfProgrammingLanguages/tree/master/go/practice16}{GitHub} : \url{https://github.com/KEPCU/FundamentalsOfProgrammingLanguages/tree/master/go/practice16}
 
 %----------------------------------------------------------------------------------------
 
