@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	path := "3.jpg"
+	path := "1.jpg"
 	path2 := "4.jpg"
 
 	start := time.Now()
